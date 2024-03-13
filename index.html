@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap" rel="stylesheet">
+
+    <!--custom css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <!--header design--> 
+   <header class="header">
+        <a href="#" class="logo">My Portfolio</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+   </header>
+
+   <!--home section design-->
+   <section class="home" id="home">
+    <div class="home-content">
+        <h3>What's up! It's Me</h3>
+        <h1>Faith Tum</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <p> I am an Information Technology student/professional with expertise in software development, Web Design, computer networks and a comprehensive understanding of computer systems management. I dream of working in a software development organization to gain exposure and further develop my skills. I'm also very passionate about music and art!</p>
+        <div class="social-media">
+            <a href="https://web.facebook.com/faithnoela.tum"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://www.instagram.com/_ms.ch3ptoo_/?hl=en"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com/in/faith-tum-32a436218/"><i class='bx bxl-linkedin-square' ></i></a>
+        </div>
+        <a href="Faith.pdf" download class="btn btn--download">Download CV</a>
+    </div>
+
+    <div class="home-image">
+        <img src="Images/pic4.jpeg" alt="" class="pic1">
+    </div>
+   </section>
+
+   <!-- about section design -->
+   <section class="about" id="about">
+        <div class="about-img">
+            <img src="Images/pic5.jpeg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>So...Who am I?</h3>
+            <p>I'm a 24 year old  girl born and raised in Eldoret, Kenya. I have majored in the field of Technology for over five years. I completed my Bachelor's Degree in Business and Information Technology in 2022. After completion, my focus and interests lied in Softwre Development and Web Design. In order to sharpen my programming skills, I partook in a couple of cources and was awarded certifications in languages like HTML/CSS, JavaScript, Python and React. My eagerness to learn more and display my creativity grows by the day. Check out more on LinkedIn. </p>
+            <a href="https://www.linkedin.com/in/faith-tum-32a436218" class="btn">Read More</a>
+        </div>
+   </section>
+
+   <!-- services section design -->
+   <section class="services" id="services">
+    <h2 class="heading">My <span>Skills</span></h2>
+
+    <div class="services-container">
+        <div class="services-box">
+            <i class='bx bx-code-alt'></i>
+            <h3>Web Development</h3>
+            <p>I develop functional and interactive websites that are viasually appealing and easy to navigate.</p>
+        </div>
+    
+        <div class="services-box">
+            <i class='bx bx-network-chart'></i>
+            <h3>Networking</h3>
+            <p>Involves network implementation and troubleshooting. Ensuring smooth communication flow.</p>
+        </div>
+
+        <div class="services-box">
+            <i class='bx bx-cloud'></i>
+            <h3>Cloud computing</h3>
+            <p>My skills cover architecture and deployment with a focus on problem-solving.</p>
+        </div>
+    
+        <div class="services-box">
+            <i class='bx bxl-github'></i>
+            <h3>Git and GitHub</h3>
+            <p>I'm skilled in version control management,branching, backup and data recovery using Git and Github.</p>
+        </div>
+    </div>
+
+   </section>
+
+<!-- Portfolio section design -->
+   <section class="portfolio" id="portfolio">
+        <h2 class="heading">My <span>Projects</span></h2>
+
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+            <img src="Images/pic6.jpeg" alt="">
+            <div class="portfolio-layer">
+                <h4>Web Design</h4>
+                <p>Simple interactive HTML/CSS website aiming to interact with learners in web development.</p>
+                <a href="https://www.linkedin.com/posts/faith-tum-32a436218_css-html-activity-7075137937792729088-7KtZ?utm_source=share&utm_medium=member_desktop"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        
+        <div class="portfolio-box">
+            <img src="Images/contoller.jpeg" alt="">
+            <div class="portfolio-layer">
+                <h4>Games</h4>
+                <p>Created simple mini games in Python using Pygame.</p>
+                <a href="https://github.com/Tum99"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <!--contact section design-->
+   <section class="contact" id="contact">
+    <h2 class="heading">Get <span>In Touch!</span></h2>
+
+    <form action="https://formspree.io/f/mdoqejee" method="POST">
+        <div class="input-box">
+            <input type="text" name="full-name" placeholder="Full Name">
+            <input type="email" name="email"  placeholder="Email Address">
+        </div>
+        <div class="input-box">
+            <input type="number" name="phone"  placeholder="Phone Number">
+            <input type="message" name="subject"  placeholder="Email Subject" required>
+        </div>
+        <textarea name="text" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+   </section>
+
+   <!--footer design-->
+   <footer class="footer">
+        <div class="footer-text">
+            <p>Back to top</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-chevrons-up'></i></a>
+        </div>
+   </footer>
+
+
+   <!--scroll reveal-->
+   <script src="https://unpkg.com/scrollreveal"></script>
+
+ <!--scroll reveal-->
+ <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+   <!--custom JS-->
+   <script src="script.js"></script>
+
+</body>
+</html>
